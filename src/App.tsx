@@ -1,8 +1,13 @@
-import React from "react";
-import { ExampleText } from "./styles/App.styles";
+import "./styles/App/style.scss";
+import Hero from "./components/Hero/Hero";
 
-function App() {
-  return <ExampleText>Yann Elouan</ExampleText>;
-}
+const App = () => {
+  return (
+    <>
+      <Hero />
+      <div style={{ height: "500px" }}></div>
+    </>
+  );
+};
 
 export default App;

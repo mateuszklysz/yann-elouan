@@ -1,0 +1,47 @@
+@use '../variables/' as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+body,
+html {
+  box-sizing: border-box;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  font-family: $font_family;
+  font-size: 10px;
+  background-color: $black;
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-right: env(safe-area-inset-right);
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $white;
+  }
+  input,
+  textarea,
+  button,
+  select,
+  p,
+  a {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    color: inherit;
+  }
+  Canvas {
+    width: 100vw;
+    height: 100vh;
+  }
+}

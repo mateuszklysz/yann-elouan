@@ -1,0 +1,59 @@
+@use "../../styles/variables" as *;
+
+.hero {
+  position: relative;
+  color: $white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 200px;
+  }
+
+  &__name {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -60%);
+    mix-blend-mode: difference;
+    font-size: $size_l;
+    text-align: center;
+  }
+
+  &__slogan {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 30%);
+    mix-blend-mode: difference;
+    font-size: $size_m;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+}
