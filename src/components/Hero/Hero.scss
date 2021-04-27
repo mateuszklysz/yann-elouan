@@ -23,26 +23,18 @@
   &__name {
     z-index: 1;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -60%);
+    top: 20%;
+    left: 10%;
     mix-blend-mode: difference;
-    font-size: $size_l;
-    text-align: center;
-  }
-
-  &__slogan {
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, 30%);
-    mix-blend-mode: difference;
-    font-size: $size_m;
-    font-weight: normal;
-    text-align: center;
+    font-size: $hero_name;
+    br {
+      display: none;
+    }
+    @media (max-width: 520px) {
+      br {
+        display: block;
+      }
+    }
   }
 
   &__video {
@@ -54,6 +46,7 @@
     min-height: 100%;
     width: auto;
     height: auto;
+    filter: grayscale(100%);
     overflow: hidden;
   }
 }

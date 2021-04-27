@@ -24,10 +24,7 @@ html {
   padding-bottom: env(safe-area-inset-bottom);
   padding-right: env(safe-area-inset-right);
   &::-webkit-scrollbar {
-    width: 0.5em;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: $white;
+    width: 0;
   }
   input,
   textarea,
@@ -39,9 +36,5 @@ html {
     -webkit-user-select: none;
     user-select: none;
     color: inherit;
-  }
-  Canvas {
-    width: 100vw;
-    height: 100vh;
   }
 }
