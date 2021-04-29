@@ -17,6 +17,7 @@ const Hero = () => {
         autoPlay
         playsInline
         loop
+        muted
       >
         <source src="videos/1.WEBM" type="video/webm" />
       </video>
