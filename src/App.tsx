@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import "./styles/App/style.scss";
+import "./App.scss";
 import Hero from "./components/Hero/Hero";
 import Loader from "./components/Loader/Loader";
 import ILoadedContext from "./ts/loaded";

@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use "../../variables/" as *;
 
 .hero {
   position: relative;
@@ -30,7 +30,7 @@
     br {
       display: none;
     }
-    @media (max-width: 520px) {
+    @media (max-width: 550px) {
       br {
         display: block;
       }
